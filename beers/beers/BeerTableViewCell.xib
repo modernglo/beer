@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14D105g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="cell" selectionStyle="default" indentationWidth="10" rowHeight="144" id="IRn-BD-cHz" customClass="BeerTableViewCell" customModule="beers" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="504" height="144"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" tableViewCell="IRn-BD-cHz" id="sle-fP-Z3B">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6c-Qr-LjX">
+                        <rect key="frame" x="363" y="8" width="118.5" height="137"/>
+                        <fontDescription key="fontDescription" name="Avenir-HeavyOblique" family="Avenir" pointSize="100"/>
+                        <color key="textColor" red="0.92941176469999998" green="0.96862745100000003" blue="0.94901960780000005" alpha="0.17000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beer Name" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.25000000000000006" translatesAutoresizingMaskIntoConstraints="NO" id="syj-na-dBR">
+                        <rect key="frame" x="18" y="14" width="119" height="40"/>
+                        <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBoldItalic" family="Avenir Next Condensed" pointSize="29"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brewery Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I8Q-hC-PHc" userLabel="Brewery Name">
+                        <rect key="frame" x="18" y="58" width="82" height="22"/>
+                        <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="16"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beer Type" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tcw-a2-hdo" userLabel="Beer Type">
+                        <rect key="frame" x="18" y="83" width="57" height="23.5"/>
+                        <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.29411764705882354" green="0.70980392156862748" blue="0.75686274509803919" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="syj-na-dBR" firstAttribute="top" secondItem="e6c-Qr-LjX" secondAttribute="bottom" constant="8" id="29q-6Y-w8x"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="syj-na-dBR" secondAttribute="bottom" constant="20" id="65C-hc-63j"/>
+                    <constraint firstItem="syj-na-dBR" firstAttribute="top" secondItem="sle-fP-Z3B" secondAttribute="topMargin" constant="6" id="F26-di-EYc"/>
+                    <constraint firstAttribute="centerY" secondItem="e6c-Qr-LjX" secondAttribute="centerY" constant="12.5" id="Hxt-dq-n6e"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="e6c-Qr-LjX" secondAttribute="trailing" constant="7" id="JtX-ey-Sey"/>
+                    <constraint firstItem="syj-na-dBR" firstAttribute="leading" secondItem="I8Q-hC-PHc" secondAttribute="leading" id="Mkh-I8-NL3"/>
+                    <constraint firstItem="e6c-Qr-LjX" firstAttribute="leading" secondItem="sle-fP-Z3B" secondAttribute="leadingMargin" constant="8" id="T0o-1O-KDu"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="e6c-Qr-LjX" secondAttribute="trailing" constant="14.5" id="WFu-qp-k1K"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="e6c-Qr-LjX" secondAttribute="bottom" constant="-20" id="cin-D6-fu3"/>
+                    <constraint firstItem="syj-na-dBR" firstAttribute="leading" secondItem="e6c-Qr-LjX" secondAttribute="leading" id="cw4-kA-IFc"/>
+                    <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="syj-na-dBR" secondAttribute="trailing" constant="8" id="dvl-6D-n4R"/>
+                    <constraint firstItem="e6c-Qr-LjX" firstAttribute="leading" secondItem="sle-fP-Z3B" secondAttribute="leadingMargin" constant="-18" id="e9V-2I-1Uj"/>
+                    <constraint firstItem="tcw-a2-hdo" firstAttribute="top" secondItem="I8Q-hC-PHc" secondAttribute="bottom" constant="3" id="eSi-jf-WFC"/>
+                    <constraint firstItem="e6c-Qr-LjX" firstAttribute="top" secondItem="sle-fP-Z3B" secondAttribute="topMargin" constant="8" id="fzC-Rm-hcO"/>
+                    <constraint firstAttribute="centerY" secondItem="e6c-Qr-LjX" secondAttribute="centerY" constant="-4.75" id="i57-3a-g9Z"/>
+                    <constraint firstItem="syj-na-dBR" firstAttribute="leading" secondItem="sle-fP-Z3B" secondAttribute="leadingMargin" constant="8" id="owy-Bz-clw"/>
+                    <constraint firstAttribute="centerY" secondItem="e6c-Qr-LjX" secondAttribute="centerY" id="pPr-wB-eEx"/>
+                    <constraint firstItem="syj-na-dBR" firstAttribute="leading" secondItem="sle-fP-Z3B" secondAttribute="leadingMargin" constant="10" id="xyg-LT-8lR"/>
+                    <constraint firstItem="tcw-a2-hdo" firstAttribute="leading" secondItem="I8Q-hC-PHc" secondAttribute="leading" id="yaf-tQ-gM2"/>
+                    <constraint firstItem="I8Q-hC-PHc" firstAttribute="top" secondItem="syj-na-dBR" secondAttribute="bottom" constant="4" id="zEF-qW-ucu"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="29q-6Y-w8x"/>
+                        <exclude reference="65C-hc-63j"/>
+                        <exclude reference="cw4-kA-IFc"/>
+                        <exclude reference="owy-Bz-clw"/>
+                        <exclude reference="Hxt-dq-n6e"/>
+                        <exclude reference="JtX-ey-Sey"/>
+                        <exclude reference="T0o-1O-KDu"/>
+                        <exclude reference="cin-D6-fu3"/>
+                        <exclude reference="e9V-2I-1Uj"/>
+                        <exclude reference="fzC-Rm-hcO"/>
+                        <exclude reference="pPr-wB-eEx"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="beerNameLabel" destination="syj-na-dBR" id="nbb-Dr-bf5"/>
+                <outlet property="beerTypeLabel" destination="tcw-a2-hdo" id="eg1-QU-YlO"/>
+                <outlet property="breweryLabel" destination="I8Q-hC-PHc" id="bCR-Iu-bKi"/>
+                <outlet property="rankLabel" destination="e6c-Qr-LjX" id="nq5-z4-2xx"/>
+            </connections>
+            <point key="canvasLocation" x="100" y="260"/>
+        </tableViewCell>
+    </objects>
+</document>
