@@ -14,7 +14,6 @@
 		82067EA41AD777EB00B5B958 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82067EA31AD777EB00B5B958 /* Images.xcassets */; };
 		82067EA71AD777EB00B5B958 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82067EA51AD777EB00B5B958 /* LaunchScreen.xib */; };
 		82067EB31AD777EC00B5B958 /* beersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82067EB21AD777EC00B5B958 /* beersTests.swift */; };
-		82067EBE1AD7789F00B5B958 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82067EBD1AD7789F00B5B958 /* Beer.swift */; };
 		82067ED31AD7792B00B5B958 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 82067EC11AD7792B00B5B958 /* AFHTTPRequestOperation.m */; };
 		82067ED41AD7792B00B5B958 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 82067EC31AD7792B00B5B958 /* AFHTTPRequestOperationManager.m */; };
 		82067ED51AD7792B00B5B958 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 82067EC51AD7792B00B5B958 /* AFHTTPSessionManager.m */; };
@@ -26,6 +25,7 @@
 		82067EDB1AD7792B00B5B958 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 82067ED21AD7792B00B5B958 /* AFURLSessionManager.m */; };
 		82067EDE1AD782FD00B5B958 /* BeerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82067EDD1AD782FD00B5B958 /* BeerTableViewCell.xib */; };
 		82067EE01AD784A400B5B958 /* BeerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82067EDF1AD784A400B5B958 /* BeerTableViewCell.swift */; };
+		8244FA251ADDE99600DC6F5A /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8244FA241ADDE99600DC6F5A /* Beer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +50,6 @@
 		82067EAC1AD777EC00B5B958 /* beersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = beersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82067EB11AD777EC00B5B958 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82067EB21AD777EC00B5B958 /* beersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beersTests.swift; sourceTree = "<group>"; };
-		82067EBD1AD7789F00B5B958 /* Beer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
 		82067EC01AD7792B00B5B958 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		82067EC11AD7792B00B5B958 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		82067EC21AD7792B00B5B958 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
@@ -73,6 +72,7 @@
 		82067EDC1AD7796B00B5B958 /* Beers-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Beers-Bridging-Header.h"; sourceTree = "<group>"; };
 		82067EDD1AD782FD00B5B958 /* BeerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BeerTableViewCell.xib; sourceTree = "<group>"; };
 		82067EDF1AD784A400B5B958 /* BeerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerTableViewCell.swift; sourceTree = "<group>"; };
+		8244FA241ADDE99600DC6F5A /* Beer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Beer.swift; path = beers/Beer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +96,7 @@
 		82067E8B1AD777EB00B5B958 = {
 			isa = PBXGroup;
 			children = (
+				8244FA241ADDE99600DC6F5A /* Beer.swift */,
 				82067EDC1AD7796B00B5B958 /* Beers-Bridging-Header.h */,
 				82067EBF1AD7792B00B5B958 /* AFNetworking */,
 				82067E961AD777EB00B5B958 /* beers */,
@@ -122,7 +123,6 @@
 				82067EA31AD777EB00B5B958 /* Images.xcassets */,
 				82067EA51AD777EB00B5B958 /* LaunchScreen.xib */,
 				82067E9B1AD777EB00B5B958 /* beers.xcdatamodeld */,
-				82067EBD1AD7789F00B5B958 /* Beer.swift */,
 				82067E971AD777EB00B5B958 /* Supporting Files */,
 				82067EDD1AD782FD00B5B958 /* BeerTableViewCell.xib */,
 				82067EDF1AD784A400B5B958 /* BeerTableViewCell.swift */,
@@ -230,6 +230,7 @@
 				TargetAttributes = {
 					82067E931AD777EB00B5B958 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 7HYT9ZB6R7;
 					};
 					82067EAB1AD777EB00B5B958 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -287,6 +288,7 @@
 				82067ED71AD7792B00B5B958 /* AFSecurityPolicy.m in Sources */,
 				82067E9A1AD777EB00B5B958 /* AppDelegate.swift in Sources */,
 				82067ED41AD7792B00B5B958 /* AFHTTPRequestOperationManager.m in Sources */,
+				8244FA251ADDE99600DC6F5A /* Beer.swift in Sources */,
 				82067ED81AD7792B00B5B958 /* AFURLConnectionOperation.m in Sources */,
 				82067ED31AD7792B00B5B958 /* AFHTTPRequestOperation.m in Sources */,
 				82067E9D1AD777EB00B5B958 /* beers.xcdatamodeld in Sources */,
@@ -295,7 +297,6 @@
 				82067ED61AD7792B00B5B958 /* AFNetworkReachabilityManager.m in Sources */,
 				82067EDA1AD7792B00B5B958 /* AFURLResponseSerialization.m in Sources */,
 				82067EDB1AD7792B00B5B958 /* AFURLSessionManager.m in Sources */,
-				82067EBE1AD7789F00B5B958 /* Beer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,6 +490,7 @@
 				82067EB81AD777EC00B5B958 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		82067EB91AD777EC00B5B958 /* Build configuration list for PBXNativeTarget "beersTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +499,7 @@
 				82067EBB1AD777EC00B5B958 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

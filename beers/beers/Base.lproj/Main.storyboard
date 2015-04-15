@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14D105g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4Sa-KZ-3Ob">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7519.1" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4Sa-KZ-3Ob">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7513.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -17,29 +17,74 @@
                         <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxH-5F-T5J">
+                                <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                                <color key="backgroundColor" red="0.29411764709999999" green="0.70980392160000005" blue="0.75686274509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="R5e-MH-waO"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="vfi-y8-Vge"/>
+                                </connections>
+                            </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" dataMode="prototypes" style="plain" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="6F7-qd-wRG">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="separatorColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="0.0" y="108" width="600" height="492"/>
+                                <color key="backgroundColor" red="0.29411764709999999" green="0.70980392160000005" blue="0.75686274509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" red="0.29411764709999999" green="0.70980392160000005" blue="0.75686274509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.29411764709999999" green="0.70980392160000005" blue="0.75686274509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6F7-qd-wRG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="1eQ-rg-Uua"/>
+                            <constraint firstItem="yxH-5F-T5J" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="M9I-X3-3CF"/>
                             <constraint firstItem="6F7-qd-wRG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="UFs-2m-hdG"/>
-                            <constraint firstItem="6F7-qd-wRG" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="16" id="ZNG-Zb-SLS"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6F7-qd-wRG" secondAttribute="bottom" id="VFf-eZ-EJc"/>
+                            <constraint firstItem="6F7-qd-wRG" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ZNG-Zb-SLS"/>
+                            <constraint firstItem="yxH-5F-T5J" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="bpz-y6-mc1"/>
+                            <constraint firstItem="6F7-qd-wRG" firstAttribute="top" secondItem="yxH-5F-T5J" secondAttribute="bottom" id="gqg-4N-WYy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6F7-qd-wRG" secondAttribute="trailing" constant="-16" id="hMZ-iE-0ic"/>
+                            <constraint firstItem="6F7-qd-wRG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="mfh-my-8ik"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6F7-qd-wRG" secondAttribute="bottom" id="qqZ-ki-1iK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yxH-5F-T5J" secondAttribute="trailing" constant="-16" id="u4G-Mv-mNI"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6F7-qd-wRG" secondAttribute="bottom" id="vZy-xl-CiE"/>
-                            <constraint firstItem="6F7-qd-wRG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="zr0-sp-0bI"/>
+                            <constraint firstItem="6F7-qd-wRG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="zr0-sp-0bI"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="1eQ-rg-Uua"/>
+                                <exclude reference="UFs-2m-hdG"/>
+                                <exclude reference="ZNG-Zb-SLS"/>
+                                <exclude reference="zr0-sp-0bI"/>
+                                <exclude reference="VFf-eZ-EJc"/>
+                                <exclude reference="vZy-xl-CiE"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Top 250 Beers" id="ZAx-uE-NOq"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
+                        <outlet property="searchBar" destination="yxH-5F-T5J" id="3sB-7w-FqI"/>
+                        <outlet property="searchDisplayController" destination="FrF-QL-X8Z" id="Gb3-56-CWz"/>
                         <outlet property="tableView" destination="6F7-qd-wRG" id="TNr-v6-3M8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="FrF-QL-X8Z">
+                    <connections>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="MTy-Aj-Ers"/>
+                        <outlet property="searchBar" destination="yxH-5F-T5J" id="Kim-fU-jDy"/>
+                        <outlet property="searchContentsController" destination="BYZ-38-t0r" id="cte-oD-DEJ"/>
+                        <outlet property="searchResultsDataSource" destination="BYZ-38-t0r" id="do9-c7-Kq9"/>
+                        <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="UAy-bl-8cX"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="1090" y="218"/>
+            <point key="canvasLocation" x="1082" y="212"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xaB-g1-iqf">
